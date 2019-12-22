@@ -12,6 +12,7 @@
     "@types/helmet": "^0.0.45",
     "@types/morgan": "^1.7.37",
     "@types/node": "^12.12.17",
+    "@types/twilio": "^2.11.0",
     "babel-runtime": "^6.26.0",
     "gql-merge": "^0.0.6",
     "graphql-to-typescript": "^0.1.2",
@@ -38,6 +39,7 @@
     "morgan": "^1.9.1",
     "node-pre-gyp": "^0.14.0",
     "pg": "^7.14.0",
+    "twilio": "^3.39.1",
     "typeorm": "^0.2.21",
     "yarn": "^1.21.1"
   }
