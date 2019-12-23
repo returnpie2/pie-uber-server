@@ -9,13 +9,20 @@ Server for the Uber Clone, GraphQL, Typescript, NodeJS
 - [x] Sign In / Sign Up with Facebook
 - [x] Sign In with Email
 - [x] Starts Phone Number Verification
-- [ ] Complete Phone Number Verification
+- [x] Complete Phone Number Verification
 - [ ] Sign Up with Email
 
-### Private Resolvers:
+---
+
+### Authentication:
 
 - [ ] Generate JWT
 - [ ] Verify JWT
+
+---
+
+### Private Resolvers:
+
 - [ ] Verify Email
 - [ ] Get My Profile
 - [ ] Update My Profile
@@ -34,6 +41,10 @@ Server for the Uber Clone, GraphQL, Typescript, NodeJS
 - [ ] Subscribe to Chat Room Messages
 - [ ] Send a Chat Message
 
+---
+
 ## Code Challenge
 - [ ] Get Ride History
 - [ ] See Ride Detail
+
+---
