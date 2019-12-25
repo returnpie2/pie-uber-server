@@ -2,7 +2,7 @@ import { Resolvers } from "../../../types/resolvers";
 import {
   StartPhoneVerificationMutationArgs,
   StartPhoneVerificationResponse
-} from "src/types/graph";
+} from "../../../types/graph";
 import Verification from "../../../entities/Verification";
 import { sendVerificationSMS } from "../../../utils/sendSMS";
 
@@ -25,7 +25,6 @@ const resolvers: Resolvers = {
           target: "PHONE"
         }).save();
         await sendVerificationSMS(newVerification.payload, newVerification.key);
-        console.log(newVerification);
         return {
           ok: true,
           error: null
