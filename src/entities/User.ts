@@ -103,7 +103,7 @@ class User extends BaseEntity {
   updatedAt: string;
 
   get fullName(): string {
-    return `${this.firstName} + ${this.lastName}`;
+    return `${this.firstName} ${this.lastName}`;
   }
 
   public comparePassword(password: string): Promise<boolean> {

@@ -15,10 +15,6 @@ type Message {
   updatedAt: String
 }
 
-type Query {
-  sayHello: String!
-}
-
 type Place {
   id: Int!
   name: String!
@@ -78,6 +74,16 @@ type FacebookConnectResponse {
   ok: Boolean!
   error: String
   token: String
+}
+
+type GetMyProfileResponse {
+  ok: Boolean!
+  error: String
+  user: User
+}
+
+type Query {
+  GetMyProfile: GetMyProfileResponse!
 }
 
 type User {
