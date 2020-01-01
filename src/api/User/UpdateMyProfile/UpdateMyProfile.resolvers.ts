@@ -1,10 +1,10 @@
-import { Resolvers } from "src/types/resolvers";
-import privateResolver from "src/utils/privateResolver";
+import { Resolvers } from "../../../types/resolvers";
+import privateResolver from "../../../utils/privateResolver";
 import {
   UpdateMyProfileMutationArgs,
   UpdateMyProfileResponse
-} from "src/types/graph";
-import User from "src/entities/User";
+} from "../../../types/graph";
+import User from "../../../entities/User";
 
 const resolvers: Resolvers = {
   Mutation: {
