@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
 import sgTranport from "nodemailer-sendgrid-transport";
 
-export const sendMail = email => {
+const sendMail = (email) => {
   const options = {
     auth: {
       api_user: process.env.SENDGRID_USERNAME,
