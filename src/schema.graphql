@@ -22,6 +22,7 @@ type AddPlaceResponse {
 
 type Mutation {
   AddPlace(name: String!, lat: Float!, lng: Float!, address: String!, isFav: Boolean!): AddPlaceResponse!
+  EditPlace(placeId: Int!, name: String, isFav: Boolean): EditPlaceResponse!
   CompleteEmailVerification(key: String!): CompleteEmailVerificationResponse!
   CompletePhoneVerification(phoneNumber: String!, key: String!): CompletePhoneVerificationResponse!
   EmailSignIn(email: String!, password: String): EmailSignInResponse!
@@ -39,10 +40,6 @@ type EditPlaceResponse {
   error: String
 }
 
-type Muataion {
-  EditPlace(placeId: Int!, name: String, isFav: Boolean): EditPlaceResponse!
-}
-
 type Place {
   id: Int!
   name: String!
@@ -50,6 +47,7 @@ type Place {
   lng: Float!
   address: String!
   isFav: Boolean!
+  userId: Int!
   user: User!
   createdAt: String!
   updatedAt: String

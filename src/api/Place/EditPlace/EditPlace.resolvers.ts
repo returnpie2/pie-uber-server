@@ -1,6 +1,6 @@
 import { Resolvers } from "../../../types/resolvers";
 import privateResolver from "../../../utils/privateResolver";
-import { EditPlaceMuataionArgs, EditPlaceResponse } from "../../../types/graph";
+import { EditPlaceMutationArgs, EditPlaceResponse } from "../../../types/graph";
 import User from "../../../entities/User";
 import Place from "../../../entities/Place";
 import cleanNullArgs from "../../../utils/cleanNullArgs";
@@ -10,7 +10,7 @@ const resolvers: Resolvers = {
     EditPlace: privateResolver(
       async (
         _,
-        args: EditPlaceMuataionArgs,
+        args: EditPlaceMutationArgs,
         { req }
       ): Promise<EditPlaceResponse> => {
         const user: User = req.user;
