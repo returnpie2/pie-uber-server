@@ -7,6 +7,6 @@ type Mutation {
   ReportMovement(
     orientation: Float
     lat: Float
-    # lng: Float
+    lng: Float
   ): ReportMovementResponse!
 }

@@ -18,7 +18,7 @@ const resolvers: Resolvers = {
         const user: User = req.user;
         const notNull = cleanNullArgs(args);
         try {
-        //   await User.update({ id: user.id }, { ...notNull });
+          await User.update({ id: user.id }, { ...notNull });
           return {
             ok: true,
             error: null
