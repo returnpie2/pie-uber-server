@@ -34,6 +34,15 @@ type Mutation {
   UpdateMyProfile(firstName: String, lastName: String, profilePhoto: String, email: String, age: Int, password: String): UpdateMyProfileResponse!
 }
 
+type EditPlaceResponse {
+  ok: Boolean!
+  error: String
+}
+
+type Muataion {
+  EditPlace(placeId: Int!, name: String, isFav: Boolean): EditPlaceResponse!
+}
+
 type Place {
   id: Int!
   name: String!
@@ -41,6 +50,7 @@ type Place {
   lng: Float!
   address: String!
   isFav: Boolean!
+  user: User!
   createdAt: String!
   updatedAt: String
 }
@@ -135,6 +145,7 @@ type User {
   messages: [Message]
   ridesAsPassenger: [Ride]
   redesAsDriver: [Ride]
+  places: [Place]
   createdAt: String!
   updatedAt: String
 }

@@ -1,0 +1,8 @@
+type EditPlaceResponse {
+    ok: Boolean!
+    error: String
+}
+
+type Muataion {
+    EditPlace(placeId: Int!, name: String, isFav: Boolean) : EditPlaceResponse!
+}
