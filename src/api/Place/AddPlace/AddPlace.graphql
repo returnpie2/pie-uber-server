@@ -1,6 +1,6 @@
 type AddPlaceResponse {
   ok: Boolean!
-#   error: String
+  error: String
 }
 
 type Mutation {
