@@ -5,6 +5,7 @@ import {
   UpdateMyProfileResponse
 } from "../../../types/graph";
 import User from "../../../entities/User";
+import cleanNullArgs from "src/utils/cleanNullArgs";
 
 const resolvers: Resolvers = {
   Mutation: {
@@ -15,12 +16,7 @@ const resolvers: Resolvers = {
         { req }
       ): Promise<UpdateMyProfileResponse> => {
         const user: User = req.user;
-        const notNull : any = {};
-        Object.keys(args).forEach(key => {
-          if (args[key] !== null) {
-            notNull[key] = args[key];
-          }
-        });
+        // const notNull = cleanNullArgs(args);
         if (notNull.password !== null) {
           user.password = notNull.password;
           user.save();

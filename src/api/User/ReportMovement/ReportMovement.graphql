@@ -1,12 +1,12 @@
 type ReportMovementResponse {
   ok: Boolean!
-  error: String!
+  error: String
 }
 
 type Mutation {
   ReportMovement(
     orientation: Float
     lat: Float
-    lng: Float
+    # lng: Float
   ): ReportMovementResponse!
 }
