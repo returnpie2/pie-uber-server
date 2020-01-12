@@ -47,7 +47,7 @@ Server for the Uber Clone, GraphQL, Typescript, NodeJS
 
 ---
 
-## Code Challenge
+#### Code Challenge
 - [ ] Get Ride History
 - [ ] See Ride Detail
 
