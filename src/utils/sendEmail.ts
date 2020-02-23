@@ -16,7 +16,7 @@ const sendMail = (email) => {
 
 const sendEmail = (to: string, subject: string, html: string) => {
   const email = {
-    from: "LJK@muber.com",
+    from: "pie-uber@returnpie.com",
     to,
     subject,
     html
@@ -26,6 +26,6 @@ const sendEmail = (to: string, subject: string, html: string) => {
 
 export const sendVerificationEmail = (to: string, fullName: string, key: string) => {
   const emailSubject = `Hello ${fullName}, please verify your Email`;
-  const emailBody = `Verify your email by clicking <a href="http://muber.com/verification/${key}/">hear</a>`;
+  const emailBody = `Verify your email by clicking <a href="http://pie-uber.com/verification/${key}/">hear</a>`;
   return sendEmail(to, emailSubject, emailBody);
 };

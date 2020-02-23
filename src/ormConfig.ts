@@ -3,7 +3,7 @@ import { ConnectionOptions } from "typeorm";
 
 const connectionOptions: ConnectionOptions = {
   type: "postgres",
-  database: "muber",
+  database: "pie-uber",
   synchronize: true,
   logging: true,
   entities: ["entities/**/*.*"],

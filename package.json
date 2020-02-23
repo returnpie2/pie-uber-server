@@ -1,10 +1,10 @@
 {
-  "name": "muber-server",
+  "name": "pie-uber-server",
   "version": "1.0.0",
   "description": "Server for the Uber Clone, GraphQL, Typescript, NodeJS",
   "main": "index.js",
-  "repository": "https://github.com/mistycoders/muber-server",
-  "author": "mistycoders <mistycoders@gmail.com>",
+  "repository": "https://github.com/returnpie/pie-uber-server",
+  "author": "returnpie <returnpie@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/bcrypt": "^3.0.0",
