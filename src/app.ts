@@ -23,6 +23,7 @@ class App {
         };
       }
     });
+    console.log('hihi');
     this.middlewares();
   }
   private middlewares = (): void => {
