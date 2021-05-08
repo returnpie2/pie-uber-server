@@ -45,7 +45,7 @@
     "nodemailer-sendgrid-transport": "^0.2.0",
     "pg": "^7.14.0",
     "twilio": "^3.39.1",
-    "typeorm": "^0.2.21",
+    "typeorm": "^0.2.25",
     "yarn": "^1.21.1"
   }
 }
